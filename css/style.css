@@ -17,15 +17,16 @@ html {
     --color-gray-4:  #D1D1D1;
     font-family: 'Nunito Sans', sans-serif;
     /* font-family: 'Open Sans', sans-serif; */
-    height: 300vh;
 
 }
-
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 .container {
     max-width: 1088px;
     margin: 0 auto;
-    background-color: #FFFFFF;
-
 }
 
 .page-header-and-banner {
@@ -133,7 +134,7 @@ html {
     color: var(--color-white-1);
     text-transform: uppercase;
     font-weight: 900;
-    text-shadow: 0 3px 6px var(--color-black-3);
+    text-shadow: 0px 3px 6px var(--color-black-3);
 }
 
 .page-banner__description {
@@ -280,6 +281,139 @@ html {
     font-weight: bold;
     text-transform: uppercase;
 }
+.contact-column{
+    margin-top: 30px;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-text-h2 {
+    font-size: 35px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+    line-height: 47px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 65px 0 30px 0 ;
+}
+.bgc-cars{
+    background-image: url("../images/form-photo.png");
+    width: 445px;
+    height: 315px;
+    float: left;
+}
+.contact-menu{
+    margin-left: 15px;
+    width: 450px;
+    float: right;
+    display: flex;
+    /*align-items: center;*/
+    flex-direction: column;
+}
+.all-column{
+    margin-bottom: 20px;
+}
+.column-input{
+    height: 40px;
+}
+.column-input,
+.contact-textarea{
+    border: 1px solid var(--color-gray-4);
+    border-radius: 8px;
+    width: 450px;
+    color: var(--color-gray-3);
+    line-height: 22px;
+}
+.contact-textarea{
+    height: 140px;
+}
+.column-input:focus{
+    border: 1px solid #FF0000;
+    box-shadow: 0 1px 6px #FF00004D;
+}
+.text-checkbox{
+    float: right;
+    width: 410px;
+    font-size: 10px;
+    line-height: 14px;
+    color: #B2B2B2;
+}
+.button-contact{
+    margin-left: 315px;
+    width: 140px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 40px;
+    border: 1px solid #FF0000;
+    box-shadow: 0 3px 6px #FF00004D;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 19px;
+    color: #FF0000;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.4);
+    background: #eee;
+    outline: none;
+    position: relative;
+}
+.checkbox:checked {
+    background: tomato;
+}
+.checkbox:checked::after {
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.car-footer{
+    margin-top: 75px;
+    height: 350px;
+    background-color: #28272C;
+}
+.logo-footer{
+    padding: 60px 20px 52px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+.footer-menu-both{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 420px;
+    width: 400px;
+    color: white;
+}
+.footer-p-text{
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
 
-
-
+.car-sharing{
+    color: red;
+}.car-sharing-white{
+    color: white;
+ }
+ .copy-footer{
+     float: right;
+     color: white;
+     font-size: 12px;
+     font-weight: 300;
+     line-height: 16px;
+     font-family: "Nunito Sans",sans-serif;
+     color: #D1D1D1;
+ }
